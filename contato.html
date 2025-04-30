@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - 1ª Corrida de Rua de Antônio Gonçalves</title>
+    <meta name="description" content="Entre em contato com a organização da 1ª Corrida de Rua de Antônio Gonçalves.">
+    
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Logo 1ª Corrida de Rua de Antônio Gonçalves">
+                </a>
+            </div>
+            
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="regulamento.html">Regulamento</a></li>
+                <li><a href="inscricao.html">Inscrição</a></li>
+                <li><a href="kit.html">Kit do Atleta</a></li>
+                <li><a href="premiacao.html">Premiação</a></li>
+                <li><a href="duvidas.html">Dúvidas</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <!-- Banner da página -->
+    <section class="banner" style="height: 300px;">
+        <div class="container">
+            <h1>CONTATO</h1>
+        </div>
+    </section>
+    
+    <!-- Informações de Contato -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Fale Conosco</h2>
+            </div>
+            
+            <div style="display: flex; flex-wrap: wrap; gap: 30px; margin-bottom: 50px;">
+                <div style="flex: 1; min-width: 300px; background-color: var(--cor-branco); padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);">
+                    <h3 style="margin-bottom: 20px;">Informações de Contato</h3>
+                    
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: 15px;">
+                            <i class="fas fa-map-marker-alt" style="color: var(--cor-primaria); margin-right: 10px;"></i>
+                            <strong>Endereço:</strong> Praça Presidente Kennedy, Antônio Gonçalves - BA
+                        </li>
+                        <li style="margin-bottom: 15px;">
+                            <i class="fas fa-phone" style="color: var(--cor-primaria); margin-right: 10px;"></i>
+                            <strong>Telefone:</strong> (74) 9 9999-9999
+                        </li>
+                        <li style="margin-bottom: 15px;">
+                            <i class="fas fa-envelope" style="color: var(--cor-primaria); margin-right: 10px;"></i>
+                            <strong>E-mail:</strong> contato@corridaantonioGoncalves.com.br
+                        </li>
+                        <li style="margin-bottom: 15px;">
+                            <i class="fab fa-whatsapp" style="color: var(--cor-primaria); margin-right: 10px;"></i>
+                            <strong>WhatsApp:</strong> (74) 9 9999-9999
+                        </li>
+                    </ul>
+                    
+                    <h3 style="margin: 30px 0 20px;">Redes Sociais</h3>
+                    
+                    <div class="social-links" style="justify-content: flex-start;">
+                        <a href="#" style="background-color: #3b5998;"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" style="background-color: #e1306c;"><i class="fab fa-instagram"></i></a>
+                        <a href="#" style="background-color: #25d366;"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                    
+                    <h3 style="margin: 30px 0 20px;">Organizadores</h3>
+                    
+                    <p><strong>Douglas Borges e Manoel Neto</strong></p>
+                    <p>Responsáveis pela organização da 1ª Corrida de Rua de Antônio Gonçalves.</p>
+                </div>
+                
+                <div style="flex: 1; min-width: 300px;">
+                    <form id="contact-form" class="contact-form">
+                        <h3 style="margin-bottom: 20px;">Envie sua Mensagem</h3>
+                        
+                        <div class="form-group">
+                            <label for="nome">Nome Completo *</label>
+                            <input type="text" id="nome" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">E-mail *</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="telefone">Telefone/WhatsApp</label>
+                            <input type="tel" id="telefone" class="form-control">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="assunto">Assunto *</label>
+                            <select id="assunto" class="form-control" required>
+                                <option value="">Selecione</option>
+                                <option value="duvida">Dúvida sobre o evento</option>
+                                <option value="inscricao">Problema com inscrição</option>
+                                <option value="kit">Informações sobre o kit</option>
+                                <option value="patrocinio">Proposta de patrocínio</option>
+                                <option value="imprensa">Imprensa</option>
+                                <option value="outro">Outro assunto</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem *</label>
+                            <textarea id="mensagem" class="form-control" rows="5" required></textarea>
+                        </div>
+                        
+                        <div style="text-align: center; margin-top: 20px;">
+                            <button type="submit" class="btn">ENVIAR MENSAGEM</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Mapa -->
+    <section class="section" style="background-color: var(--cor-terciaria); padding-bottom: 0;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Localização</h2>
+            </div>
+            
+            <p class="text-center" style="margin-bottom: 30px;">A largada e chegada da corrida acontecerão na Praça Presidente Kennedy, no centro de Antônio Gonçalves.</p>
+        </div>
+        
+        <div style="width: 100%; height: 400px; margin-bottom: -6px;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15646.33167456414!2d-40.28720545!3d-10.56070745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x76a0e7e4c6b579d%3A0x6f30c83a116f16cd!2sAnt%C3%B4nio%20Gon%C3%A7alves%2C%20BA%2C%2044780-000!5e0!3m2!1spt-BR!2sbr!4v1650000000000!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-column">
+                <h3>1ª Corrida de Rua</h3>
+                <p>A primeira corrida de rua oficial da cidade de Antônio Gonçalves, Bahia. Um evento histórico para o esporte na região.</p>
+                
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Links Rápidos</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="regulamento.html">Regulamento</a></li>
+                    <li><a href="inscricao.html">Inscrição</a></li>
+                    <li><a href="kit.html">Kit do Atleta</a></li>
+                    <li><a href="premiacao.html">Premiação</a></li>
+                    <li><a href="duvidas.html">Dúvidas</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Contato</h3>
+                <ul class="footer-links">
+                    <li><i class="fas fa-map-marker-alt"></i> Praça Presidente Kennedy, Antônio Gonçalves - BA</li>
+                    <li><i class="fas fa-phone"></i> (74) 9 9999-9999</li>
+                    <li><i class="fas fa-envelope"></i> contato@corridaantonioGoncalves.com.br</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 - 1ª Corrida de Rua de Antônio Gonçalves. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script src="js/scripts.js"></script>
+</body>
+</html>

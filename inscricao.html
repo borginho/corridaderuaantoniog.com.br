@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição - 1ª Corrida de Rua de Antônio Gonçalves</title>
+    <meta name="description" content="Faça sua inscrição para a 1ª Corrida de Rua de Antônio Gonçalves.">
+    
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Logo 1ª Corrida de Rua de Antônio Gonçalves">
+                </a>
+            </div>
+            
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="regulamento.html">Regulamento</a></li>
+                <li><a href="inscricao.html">Inscrição</a></li>
+                <li><a href="kit.html">Kit do Atleta</a></li>
+                <li><a href="premiacao.html">Premiação</a></li>
+                <li><a href="duvidas.html">Dúvidas</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <!-- Banner da página -->
+    <section class="banner" style="height: 300px;">
+        <div class="container">
+            <h1>INSCRIÇÃO</h1>
+        </div>
+    </section>
+    
+    <!-- Informações de Inscrição -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Informações de Inscrição</h2>
+            </div>
+            
+            <div style="background-color: var(--cor-branco); padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); margin-bottom: 40px;">
+                <h3>Período de Inscrições</h3>
+                <p>As inscrições estarão abertas de 11/05/2025 a 26/06/2025 ou até atingir o limite de 250 atletas.</p>
+                
+                <h3>Valor da Inscrição</h3>
+                <p>R$ 60,00 (sessenta reais)</p>
+                
+                <h3>O que está incluso</h3>
+                <ul style="list-style-type: disc; margin-left: 20px; margin-bottom: 20px;">
+                    <li>Kit Completo do Atleta</li>
+                    <li>Chip de Cronometragem</li>
+                    <li>Numeral de Corrida</li>
+                    <li>Medalha de Participação (para quem completar a prova)</li>
+                    <li>Seguro Atleta</li>
+                    <li>Hidratação durante o percurso</li>
+                    <li>Kit pós-prova (frutas e hidratação)</li>
+                </ul>
+                
+                <h3>Requisitos para Participação</h3>
+                <ul style="list-style-type: disc; margin-left: 20px; margin-bottom: 20px;">
+                    <li>Idade mínima: 16 anos (menores de 18 anos precisam de autorização do responsável)</li>
+                    <li>Estar em boas condições de saúde</li>
+                    <li>Aceitar os termos do regulamento</li>
+                </ul>
+                
+                <div style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; margin-top: 20px;">
+                    <p><strong>Importante:</strong> As inscrições são pessoais e intransferíveis. Em caso de desistência, a taxa de inscrição não será reembolsada.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Formulário de Inscrição -->
+    <section class="section" style="background-color: var(--cor-terciaria);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Formulário de Inscrição</h2>
+            </div>
+            
+            <form id="registration-form" class="contact-form">
+                <h3 style="margin-bottom: 20px;">Dados Pessoais</h3>
+                
+                <div class="form-group">
+                    <label for="nome">Nome Completo *</label>
+                    <input type="text" id="nome" class="form-control" required>
+                </div>
+                
+                <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+                    <div class="form-group" style="flex: 1; min-width: 250px;">
+                        <label for="cpf">CPF *</label>
+                        <input type="text" id="cpf" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group" style="flex: 1; min-width: 250px;">
+                        <label for="rg">RG *</label>
+                        <input type="text" id="rg" class="form-control" required>
+                    </div>
+                </div>
+                
+                <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+                    <div class="form-group" style="flex: 1; min-width: 250px;">
+                        <label for="data_nascimento">Data de Nascimento *</label>
+                        <input type="date" id="data_nascimento" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group" style="flex: 1; min-width: 250px;">
+                        <label for="sexo">Sexo *</label>
+                        <select id="sexo" class="form-control" required>
+                            <option value="">Selecione</option>
+                            <option value="masculino">Masculino</option>
+                            <option value="feminino">Feminino</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <h3 style="margin: 30px 0 20px;">Contato</h3>
+                
+                <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+                    <div class="form-group" style="flex: 1; min-width: 250px;">
+                        <label for="email">E-mail *</label>
+                        <input type="email" id="email" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group" style="flex: 1; min-width: 250px;">
+                        <label for="telefone">Telefone/WhatsApp *</label>
+                        <input type="tel" id="telefone" class="form-control" required>
+                    </div>
+                </div>
+                
+                <h3 style="margin: 30px 0 20px;">Endereço</h3>
+                
+                <div class="form-group">
+                    <label for="endereco">Endereço Completo *</label>
+                    <input type="text" id="endereco" class="form-control" required>
+                </div>
+                
+                <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+                    <div class="form-group" style="flex: 1; min-width: 250px;">
+                        <label for="cidade">Cidade *</label>
+                        <input type="text" id="cidade" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group" style="flex: 1; min-width: 250px;">
+                        <label for="estado">Estado *</label>
+                        <select id="estado" class="form-control" required>
+                            <option value="">Selecione</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group" style="flex: 1; min-width: 250px;">
+                        <label for="cep">CEP *</label>
+                        <input type="text" id="cep" class="form-control" required>
+                    </div>
+                </div>
+                
+                <h3 style="margin: 30px 0 20px;">Informações Adicionais</h3>
+                
+                <div class="form-group">
+                    <label for="tamanho_camisa">Tamanho da Camisa *</label>
+                    <select id="tamanho_camisa" class="form-control" required>
+                        <option value="">Selecione</option>
+                        <option value="PP">PP</option>
+                        <option value="P">P</option>
+                        <option value="M">M</option>
+                        <option value="G">G</option>
+                        <option value="GG">GG</option>
+                        <option value="XGG">XGG</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="contato_emergencia">Nome e Telefone de Contato de Emergência *</label>
+                    <input type="text" id="contato_emergencia" class="form-control" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="info_medica">Informações Médicas Relevantes (opcional)</label>
+                    <textarea id="info_medica" class="form-control" rows="3"></textarea>
+                </div>
+                
+                <div class="form-group" style="margin-top: 30px;">
+                    <div style="display: flex; align-items: flex-start; margin-bottom: 15px;">
+                        <input type="checkbox" id="aceite_regulamento" style="margin-top: 5px; margin-right: 10px;" required>
+                        <label for="aceite_regulamento">Declaro que li e estou de acordo com o <a href="regulamento.html" target="_blank">regulamento do evento</a>, participo deste evento por vontade própria e atesto que estou clinicamente em condições de saúde segundo avaliação médica e devidamente treinado. *</label>
+                    </div>
+                    
+                    <div style="display: flex; align-items: flex-start; margin-bottom: 15px;">
+                        <input type="checkbox" id="aceite_riscos" style="margin-top: 5px; margin-right: 10px;" required>
+                        <label for="aceite_riscos">Assumo todos os riscos em participar do evento, inclusive os relativos a quedas, contatos com outros participantes, efeitos do clima, condições do circuito e do tráfego. *</label>
+                    </div>
+                    
+                    <div style="display: flex; align-items: flex-start;">
+                        <input type="checkbox" id="aceite_imagem" style="margin-top: 5px; margin-right: 10px;" required>
+                        <label for="aceite_imagem">Concedo permissão à organização e seus representantes, direito de uso de imagem, para que utilize fotos, filmes, gravações, etc.; para divulgação que mostre minha participação. *</label>
+                    </div>
+                </div>
+                
+                <div style="text-align: center; margin-top: 30px;">
+                    <button type="submit" class="btn btn-large">FINALIZAR INSCRIÇÃO</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-column">
+                <h3>1ª Corrida de Rua</h3>
+                <p>A primeira corrida de rua oficial da cidade de Antônio Gonçalves, Bahia. Um evento histórico para o esporte na região.</p>
+                
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Links Rápidos</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="regulamento.html">Regulamento</a></li>
+                    <li><a href="inscricao.html">Inscrição</a></li>
+                    <li><a href="kit.html">Kit do Atleta</a></li>
+                    <li><a href="premiacao.html">Premiação</a></li>
+                    <li><a href="duvidas.html">Dúvidas</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Contato</h3>
+                <ul class="footer-links">
+                    <li><i class="fas fa-map-marker-alt"></i> Praça Presidente Kennedy, Antônio Gonçalves - BA</li>
+                    <li><i class="fas fa-phone"></i> (74) 9 9999-9999</li>
+                    <li><i class="fas fa-envelope"></i> contato@corridaantonioGoncalves.com.br</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 - 1ª Corrida de Rua de Antônio Gonçalves. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script src="js/scripts.js"></script>
+    <script src="js/inscricao.js"></script>
+</body>
+</html>
